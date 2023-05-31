@@ -8,14 +8,13 @@ const theme = reactive({
 
 function toggleTheme() {
   color.preference = color.value === 'dark' ? 'light' : 'dark'
-  theme.algorithm = color.value === 'dark' ? antdTheme.darkAlgorithm : antdTheme.defaultAlgorithm
+  theme.algorithm = color.preference === 'dark' ? antdTheme.darkAlgorithm : antdTheme.defaultAlgorithm
 }
 </script>
 
 <template>
   <a-config-provider :theme="theme">
     <header flex h-48px items-center justify-end px-20px bg-white dark="bg-[var(--bg-header-color)]">
-      <!--  -->
       <a-switch :checked="color.value === 'light'" checked-children="Light" un-checked-children="Dark" @update:checked="toggleTheme" />
     </header>
     <div p-20px>
