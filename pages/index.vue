@@ -62,12 +62,16 @@ const layout = {
 }
 
 const validateMessages = {
+  // eslint-disable-next-line no-template-curly-in-string
   required: '${label} is required!',
   types: {
+    // eslint-disable-next-line no-template-curly-in-string
     email: '${label} is not a valid email!',
+    // eslint-disable-next-line no-template-curly-in-string
     number: '${label} is not a valid number!',
   },
   number: {
+    // eslint-disable-next-line no-template-curly-in-string
     range: '${label} must be between ${min} and ${max}',
   },
 }
@@ -82,7 +86,18 @@ const formState = reactive({
   },
 })
 const onFinish = (values: any) => {
+  // eslint-disable-next-line no-console
   console.log('Success:', values)
+}
+
+const open = ref<boolean>(false)
+
+const showModal = () => {
+  open.value = true
+}
+
+const handleOk = (e: MouseEvent) => {
+  open.value = false
 }
 </script>
 
@@ -184,5 +199,16 @@ const onFinish = (values: any) => {
         </a-button>
       </a-form-item>
     </a-form>
+
+    <div>
+      <a-button type="primary" @click="showModal">
+        Open Modal
+      </a-button>
+      <a-modal v-model:open="open" title="Basic Modal" @ok="handleOk">
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+      </a-modal>
+    </div>
   </div>
 </template>
