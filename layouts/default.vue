@@ -11,7 +11,6 @@
 </template>
 
 <style>
-@import "@/assets/css/antd.css";
 
 html{
   --bg-color: #f1f1f1;

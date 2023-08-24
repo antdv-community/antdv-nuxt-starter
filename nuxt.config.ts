@@ -1,5 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app:{
+    head: {
+      link:[
+        {
+            rel: 'stylesheet',
+            href:"/css/antd.css"
+        }
+      ]
+    }
+  },
   modules: [
     '@nuxtjs/color-mode',
     '@pinia/nuxt',
