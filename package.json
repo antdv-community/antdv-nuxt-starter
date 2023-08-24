@@ -2,7 +2,8 @@
   "name": "nuxt-app",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
+    "build": "cross-env NODE_ENV=production run-s gen:css build:nuxt",
+    "build:nuxt": "nuxt build",
     "dev": "run-s gen:css dev:nuxt",
     "dev:nuxt": "nuxt dev",
     "generate": "run-s gen:css generate:nuxt",
