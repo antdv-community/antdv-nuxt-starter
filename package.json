@@ -15,12 +15,12 @@
   },
   "dependencies": {
     "@ant-design-vue/nuxt": "^1.1.1",
-    "@ant-design/icons-vue": "^6.1.0",
+    "@ant-design/icons-vue": "^7.0.0",
     "@nuxtjs/color-mode": "^3.3.0",
     "@pinia/nuxt": "^0.4.11",
     "@unocss/nuxt": "^0.53.5",
     "@vueuse/nuxt": "^10.2.1",
-    "ant-design-vue": "^4.0.1"
+    "ant-design-vue": "^4.0.3"
   },
   "devDependencies": {
     "@mistjs/eslint-config-vue": "^0.0.5",
