@@ -14,24 +14,24 @@
     "gen:css": "esno scripts/genAntdStyle.ts"
   },
   "dependencies": {
-    "@ant-design-vue/nuxt": "^1.1.1",
-    "@ant-design/icons-vue": "^7.0.0",
-    "@nuxtjs/color-mode": "^3.3.0",
+    "@ant-design-vue/nuxt": "^1.2.0",
+    "@ant-design/icons-vue": "^7.0.1",
+    "@nuxtjs/color-mode": "^3.3.2",
     "@pinia/nuxt": "^0.4.11",
-    "@unocss/nuxt": "^0.53.5",
-    "@vueuse/nuxt": "^10.2.1",
-    "ant-design-vue": "^4.0.3"
+    "@unocss/nuxt": "^0.53.6",
+    "@vueuse/nuxt": "^10.6.1",
+    "ant-design-vue": "^4.0.7"
   },
   "devDependencies": {
     "@mistjs/eslint-config-vue": "^0.0.5",
-    "@types/fs-extra": "^11.0.1",
-    "@types/node": "^18.16.19",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^18.18.13",
     "cross-env": "^7.0.3",
-    "eslint": "^8.45.0",
+    "eslint": "^8.54.0",
     "esno": "^0.17.0",
     "fs-extra": "^11.1.1",
     "npm-run-all": "^4.1.5",
-    "nuxt": "^3.6.3",
-    "unocss": "^0.53.5"
+    "nuxt": "^3.8.2",
+    "unocss": "^0.53.6"
   }
 }

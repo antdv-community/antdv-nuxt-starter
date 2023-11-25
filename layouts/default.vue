@@ -1,9 +1,9 @@
 <script setup lang="ts">
-
+import { theme } from 'ant-design-vue/es'
 </script>
 
 <template>
-  <a-config-provider>
+  <a-config-provider :theme="{ algorithm: theme.darkAlgorithm }">
     <div p-20px>
       <slot />
     </div>
@@ -11,7 +11,6 @@
 </template>
 
 <style>
-
 html{
   --bg-color: #f1f1f1;
 }
