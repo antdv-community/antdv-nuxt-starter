@@ -20,7 +20,7 @@
     "@pinia/nuxt": "^0.4.11",
     "@unocss/nuxt": "^0.53.6",
     "@vueuse/nuxt": "^10.6.1",
-    "ant-design-vue": "^4.0.7"
+    "ant-design-vue": "npm:@antd-tiny-vue/test@^4.0.7"
   },
   "devDependencies": {
     "@mistjs/eslint-config-vue": "^0.0.5",

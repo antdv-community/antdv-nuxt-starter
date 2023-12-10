@@ -1,9 +1,16 @@
 <script setup lang="ts">
+import type { ConfigProviderProps } from 'ant-design-vue/es'
 import { theme } from 'ant-design-vue/es'
+const themeConfig = {
+  algorithm: theme.darkAlgorithm,
+  token: {
+    colorPrimary: '#722ed1',
+  },
+} as ConfigProviderProps['theme']
 </script>
 
 <template>
-  <a-config-provider :theme="{ algorithm: theme.darkAlgorithm }">
+  <a-config-provider :theme="themeConfig">
     <div p-20px>
       <slot />
     </div>

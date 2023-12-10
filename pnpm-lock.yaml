@@ -24,8 +24,8 @@ dependencies:
     specifier: ^10.6.1
     version: 10.6.1(nuxt@3.8.2)(vue@3.3.8)
   ant-design-vue:
-    specifier: ^4.0.7
-    version: 4.0.7(vue@3.3.8)
+    specifier: npm:@antd-tiny-vue/test@^4.0.7
+    version: /@antd-tiny-vue/test@4.0.7(vue@3.3.8)
 
 devDependencies:
   '@mistjs/eslint-config-vue':
@@ -102,6 +102,37 @@ packages:
       '@ant-design/colors': 6.0.0
       '@ant-design/icons-svg': 4.3.1
       vue: 3.3.8(typescript@5.3.2)
+    dev: false
+
+  /@antd-tiny-vue/test@4.0.7(vue@3.3.8):
+    resolution: {integrity: sha512-p4Qx/MGXeDQMem0/RJ+3VN99nQGzO9FqJZOW5g/QhKFMko7J+b3rla+ZTZ8wC8xbkAqjYKCKIDgKKp38IND89w==}
+    engines: {node: '>=12.22.0'}
+    peerDependencies:
+      vue: '>=3.2.0'
+    dependencies:
+      '@ant-design/colors': 6.0.0
+      '@ant-design/icons-vue': 7.0.1(vue@3.3.8)
+      '@babel/runtime': 7.23.4
+      '@ctrl/tinycolor': 3.6.1
+      '@emotion/hash': 0.9.1
+      '@emotion/unitless': 0.8.1
+      '@simonwep/pickr': 1.8.2
+      array-tree-filter: 2.1.0
+      async-validator: 4.2.5
+      csstype: 3.1.2
+      dayjs: 1.11.10
+      dom-align: 1.12.4
+      dom-scroll-into-view: 2.0.1
+      lodash: 4.17.21
+      lodash-es: 4.17.21
+      resize-observer-polyfill: 1.5.1
+      scroll-into-view-if-needed: 2.2.31
+      shallow-equal: 1.2.1
+      stylis: 4.3.0
+      throttle-debounce: 5.0.0
+      vue: 3.3.8(typescript@5.3.2)
+      vue-types: 3.0.2(vue@3.3.8)
+      warning: 4.0.3
     dev: false
 
   /@antfu/install-pkg@0.1.1:
@@ -1407,6 +1438,7 @@ packages:
     dependencies:
       is-glob: 4.0.3
       micromatch: 4.0.5
+      napi-wasm: 1.1.0
     bundledDependencies:
       - napi-wasm
 
@@ -5434,6 +5466,9 @@ packages:
   /nanopop@2.3.0:
     resolution: {integrity: sha512-fzN+T2K7/Ah25XU02MJkPZ5q4Tj5FpjmIYq4rvoHX4yb16HzFdCO6JxFFn5Y/oBhQ8no8fUZavnyIv9/+xkBBw==}
     dev: false
+
+  /napi-wasm@1.1.0:
+    resolution: {integrity: sha512-lHwIAJbmLSjF9VDRm9GoVOy9AGp3aIvkjv+Kvz9h16QR3uSVYH78PNQUnT2U4X53mhlnV2M7wrhibQ3GHicDmg==}
 
   /natural-compare-lite@1.4.0:
     resolution: {integrity: sha512-Tj+HTDSJJKaZnfiuw+iaF9skdPpTo2GtEly5JHnWV/hfv2Qj/9RKsGISQtLh2ox3l5EAGw487hnBee0sIJ6v2g==}

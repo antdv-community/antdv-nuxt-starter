@@ -9,7 +9,14 @@ export const genAntdStyle = async () => {
 
 export const genAntdStyleDarkMode = async () => {
   const css = extractStyle((node) => {
-    return h(ConfigProvider, { theme: { algorithm: theme.darkAlgorithm } }, {
+    return h(ConfigProvider, {
+      theme: {
+        algorithm: theme.darkAlgorithm,
+        token: {
+          colorPrimary: '#722ed1',
+        },
+      },
+    }, {
       default: () => node,
     })
   })
