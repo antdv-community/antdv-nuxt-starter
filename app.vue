@@ -1,5 +1,10 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <NuxtLayout>
-    <NuxtPage />
+    <a-extract-style>
+      <NuxtPage />
+    </a-extract-style>
   </NuxtLayout>
 </template>

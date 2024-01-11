@@ -1,14 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  app: {
-    head: {
-      link: [
-        {
-          rel: 'stylesheet',
-          href: '/css/antd.dark.css',
-        },
-      ],
-    },
+  antd: {
+    extractStyle: true,
   },
   modules: [
     '@nuxtjs/color-mode',
