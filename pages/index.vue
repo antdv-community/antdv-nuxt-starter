@@ -1,7 +1,9 @@
 <script setup lang="ts">
 const checked = shallowRef(true)
+const router = useRouter()
 const handleClick = () => {
   message.info('test')
+  router.push('/about')
 }
 
 const columns = [

@@ -2,14 +2,12 @@
   "name": "nuxt-app",
   "private": true,
   "scripts": {
-    "build": "cross-env NODE_ENV=production run-s gen:css build:nuxt",
-    "build:nuxt": "nuxt build",
+    "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint . --ext .ts,.vue,.tsx --fix",
-    "gen:css": "esno scripts/genAntdStyle.ts"
+    "lint": "eslint . --ext .ts,.vue,.tsx --fix"
   },
   "dependencies": {
     "@ant-design-vue/nuxt": "^1.4.1",
